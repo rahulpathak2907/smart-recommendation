@@ -2,6 +2,10 @@
 
 > **Note:** Generating descriptions using LLM calls may take more than 2 seconds per request.
 
+## To Run
+1.uvicorn app.main:app --reload
+2.streamlit run streamlit_app/app.py
+
 AI-powered product recommendation service leveraging **OpenAI embeddings** and **FAISS** vector database.
 
 ## Features
