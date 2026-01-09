@@ -1,0 +1,82 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+.env
+
+# Logs
+*.log
+logs/
+*.out
+
+# Database / SQLite files
+*.db
+*.sqlite3
+
+# VS Code
+.vscode/
+.history/
+
+# macOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+.coverage.*
+
+# pytest cache
+.pytest_cache/
+
+# mypy cache
+.mypy_cache/
+.dmypy.json
+
+# FAISS / embeddings or vectors (optional, if you don't want to commit large files)
+*.index
+*.faiss
+*.npy
+*.npz
+
+# Pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# node_modules (if you have frontend)
+node_modules/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Temporary files
+*.tmp
+*.swp
+
+#folder
+/Data
