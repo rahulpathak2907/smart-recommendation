@@ -1,22 +1,52 @@
 # Smart Product Recommendation System
 
-> **Note:** Generating descriptions using LLM calls may take more than 2 seconds per request.
+AI-powered product recommendation service using **OpenAI embeddings** and **FAISS** vector database with LLM-enhanced descriptions.
 
-## To Run
-1.uvicorn app.main:app --reload
-2.streamlit run streamlit_app/app.py
+> ⚠️ Note: Generating LLM-based descriptions may take more than 2 seconds per request.
 
-AI-powered product recommendation service leveraging **OpenAI embeddings** and **FAISS** vector database.
+---
 
 ## Features
 
-- ✅ **Semantic Search**: Understands user intent using OpenAI embeddings.
-- ✅ **Fast Vector Search**: FAISS-based similarity search for efficient results.
-- ✅ **Explainable AI**: Clear similarity scores and descriptive product explanations.
-- ✅ **RESTful API**: Built with FastAPI and automatic documentation (`/docs`).
-- ✅ **Interactive UI**: Streamlit frontend for easy product search testing.
-- ✅ **Production Ready**: Includes logging, error handling, and caching.
-- ✅ **LLM-Enhanced Descriptions**: Generates friendly, human-readable product descriptions.
+- ✅ **Semantic Search**: Understands user queries using OpenAI embeddings  
+- ✅ **Fast Vector Search**: FAISS-based similarity search for sub-second response  
+- ✅ **Explainable Recommendations**: Provides similarity scores  
+- ✅ **RESTful API**: FastAPI backend with Swagger/OpenAPI docs  
+- ✅ **Interactive UI**: Streamlit frontend for quick testing  
+- ✅ **Production Ready**: Logging, error handling, and environment configuration  
+- ✅ **LLM-enhanced Descriptions**: Generates creative product descriptions  
+
+---
+
+## Project Structure
+
+smart-recommendation/
+├── app/ # FastAPI backend
+│ ├── init.py
+│ ├── main.py # Entry point for FastAPI
+│ ├── config.py # Application settings
+│ ├── models.py # Pydantic models
+│ └── services/ # Service layer
+│ ├── init.py
+│ ├── embedding_service.py # OpenAI embeddings wrapper
+│ ├── vector_store.py # FAISS vector store
+│ ├── product.py # Sample product data
+│ └── recommendation_service.py # Core recommendation logic
+├── data/
+│ └── faiss_index/ # Saved FAISS index files
+├── streamlit_app/ # Frontend UI
+│ ├── init.py
+│ └── app.py # Streamlit frontend app
+├── tests/ # Test suite
+│ ├── init.py
+│ └── test_api.py # Example API tests
+├── .env # Environment variables
+├── .gitignore # Git ignore rules
+├── README.md # This file
+├── main.py # Optional script to run backend
+└── pyproject.toml # Python project config
+
+
 
 ## Architecture
 
